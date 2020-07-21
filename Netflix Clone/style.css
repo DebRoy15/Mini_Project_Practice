@@ -1,0 +1,184 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#header {
+  background-color: black;
+  color: white;
+  overflow: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.logo {
+  float: left;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 20px;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: red;
+}
+.leftMenu {
+  float: left;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  display: inline-block;
+}
+.leftMenu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.leftMenu ul li {
+  display: inline-block;
+  padding: 20px;
+}
+.leftMenu ul li a {
+  color: white;
+  text-decoration: none;
+}
+.rightMenu {
+  display: inline-block;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  float: right;
+}
+.rightMenu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.rightMenu ul li {
+  display: inline-block;
+  padding: 20px;
+}
+.rightMenu ul li a {
+  color: white;
+  text-decoration: none;
+}
+.leftMenu ul li a:hover,
+.rightMenu ul li a:hover {
+  color: red;
+}
+#backgroundImage {
+  list-style-type: none;
+  background-image: url("https://i.gzn.jp/img/2020/06/26/cyberpunk-edgerunners/00.png"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.descriptionBox {
+  padding-left: 4%;
+  padding-top: 7%;
+  width: 40%;
+}
+.descriptionBox h4 {
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.descriptionBox h1 {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: white;
+  font-size: 50px;
+}
+.descriptionBox h3 {
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.descriptionBox p {
+  padding-right: 40px;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.button1 {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #000000;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.button2 {
+  display: inline-block;
+  padding: 10px 18px;
+  border: 2px solid #000000;
+  color: #ffffff;
+  cursor: pointer;
+}
+.button1:hover {
+  background: rgba(0, 0, 0, 6);
+}
+.button2:hover {
+  background: rgba(0, 0, 0, 6);
+  border: 2px solid rgba(0, 0, 0, 6);
+}
+#videoSection {
+  width: 100%;
+  background-color: #000000;
+}
+
+.row {
+  font-size: 0;
+  width: 100%;
+}
+.videoBoxes {
+  display: inline-block;
+  background-color: red;
+  width: 15%;
+  height: 150px;
+  font-size: 16px;
+  margin: 2.5%;
+}
+.videoBoxes h4 {
+  margin: 0;
+  color: white;
+  padding: 15px;
+}
+
+.video1 {
+  background: url(https://lh3.googleusercontent.com/proxy/vMx6uiPWvLmkcfFVvsZt1tgWN9fXEvqxQNmgTri6tfqtxPN5zrolF70-tnzM6vqKzsx6lI-Lca8YIJFtVVBzK9oW5OnklNJja0HxelSGryuojz3ihNeZ);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+.video2 {
+  background: url(https://i.pinimg.com/originals/5c/ab/b2/5cabb2ca112ce581acd771ea838b9507.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+.video3 {
+  background: url(https://images.squarespace-cdn.com/content/v1/592b020a8419c2e1dd1199dc/1524536685475-NALVUGZ0EJTQ9W29TQ90/ke17ZwdGBToddI8pDm48kOdlMSuc6l3bg4_O3p1DNccUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcxzwZuf9fRNKkUMm03yynrdSj3pwwD7zb1cvsHRaCg60C1WB8ANBZkVcGAwv6VHsQ/Infinity-War-Movie-New-Presales-Record.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+.video4 {
+  background: url(https://www.desktopbackground.org/p/2013/11/25/675777_avatar-movie-poster-credits_1920x1080_h.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+.video5 {
+  background: url(https://wallpaperstream.com/wallpapers/full/iron-man/Iron-Man-3-Official-Movie-Poster.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+@media screen and (max-width: 600px) {
+  .videoBoxes {
+    width: 95%;
+    margin: 2.5%;
+  }
+}
