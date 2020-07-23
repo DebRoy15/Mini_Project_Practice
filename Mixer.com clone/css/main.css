@@ -1,0 +1,81 @@
+@import url(reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,500&display=swap");
+html,
+body {
+  background-color: #253141;
+  font-family: "Montserrat", sans-serif;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+header .leftMenu {
+  display: flex;
+}
+
+header .leftMenu .logo {
+  font-size: 2rem;
+  color: white;
+}
+
+header .leftMenu .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+}
+
+header .leftMenu .menu a {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  padding: 0 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+header .rightMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .rightMenu .language {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  padding: 0 60px 0 0;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+header .rightMenu .signin {
+  background: #0375d5;
+  border-radius: 3px;
+  padding: 10px 20px;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: aliceblue;
+  text-decoration: none;
+}
+
+/* featured */
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+#featured {
+}
+
+#featured .videoSection {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 580px 1.5fr 1fr;
+  grid-gap: 8px;
+}
+#featured .videoSection .video.center {
+  width: 580px;
+  height: 326px;
+  background: white;
+}
+#featured .videoSection .video {
+  background: lightseagreen;
+}
