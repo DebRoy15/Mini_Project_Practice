@@ -2,8 +2,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,500&display=swap");
 html,
 body {
+  padding: 0 0 30px;
   background-color: #253141;
   font-family: "Montserrat", sans-serif;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(37, 49, 65, 0.8) 0%,
+      #253141 90%,
+      #253141 100%
+    ),
+    url("https://www.denofgeek.com/wp-content/uploads/2019/02/apex_legends_ea_competition.jpg?fit=1920%2C1080");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 header {
   display: flex;
@@ -33,11 +44,17 @@ header .leftMenu .menu a {
   padding: 0 20px;
   font-weight: 300;
   text-transform: uppercase;
+  transition: all 0.4s ease-in-out;
+}
+header .leftMenu .menu a:hover {
+  color: rgba(255, 255, 255, 1);
+  font-weight: 400;
 }
 header .rightMenu {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 header .rightMenu .language {
   color: rgba(255, 255, 255, 0.6);
@@ -59,23 +76,164 @@ header .rightMenu .signin {
 
 /* featured */
 .container {
-  width: 1000px;
+  width: 1100px;
   margin: 0 auto;
+}
+.sectionTitle {
+  font-size: 1.7rem;
+  color: aliceblue;
+  margin-bottom: 30px;
 }
 
 #featured {
+  padding: 50px 0 0;
 }
 
 #featured .videoSection {
   display: grid;
-  grid-template-columns: 1fr 1.5fr 580px 1.5fr 1fr;
+  grid-template-columns: 1fr 1.5fr 620px 1.5fr 1fr;
   grid-gap: 8px;
 }
+#featured .videoSection .video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #featured .videoSection .video.center {
-  width: 580px;
-  height: 326px;
+  width: 100%;
+  height: 349px;
   background: white;
 }
-#featured .videoSection .video {
-  background: lightseagreen;
+
+#featured .videoSection .video .image {
+  width: 100%;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background: url("https://img.republicworld.com/republic-prod/stories/promolarge/xxhdpi/hxbx6yejfkdypnnu_1594025968.jpeg?tr=w-812,h-464");
+}
+#featured .videoSection .video.center .image {
+  width: 100%;
+  height: 349px;
+  transform: scale(1.05);
+  border: 2px solid #00b4f0;
+  background: url("https://specials-images.forbesimg.com/imageserve/5f18792c620695000741a77d/960x0.jpg?fit=scale");
+}
+
+#featured .videoSection .video:nth-child(1) .image,
+.video:nth-child(5) .image {
+  position: relative;
+}
+
+#featured .videoSection .video:nth-child(1) .image .arrow {
+  position: absolute;
+  background: rgb(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 10px;
+  transition: all 0.4s ease-in-out;
+}
+
+#featured .videoSection .video:nth-child(5) .image .arrow {
+  position: absolute;
+  background: rgb(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 10px;
+  right: 0;
+  transition: all 0.4s ease-in-out;
+}
+#featured .videoSection .video:nth-child(1) .image .arrow:hover {
+  background: rgb(0, 0, 0, 0.5);
+}
+#featured .videoSection .video:nth-child(5) .image .arrow:hover {
+  background: rgb(0, 0, 0, 0.5);
+}
+#featured .videoSection .video:nth-child(1) .image .arrow .fa,
+.video:nth-child(5) .image .arrow .fa {
+  font-size: 4rem;
+  color: #00b4f0;
+}
+
+#featured .circles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#featured .circles .circle {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 60px;
+  margin: 0 5px;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease-in-out;
+}
+#featured .circles .circle:hover {
+  color: #00b4f0;
+  font-size: 60px;
+  font-weight: bold;
+}
+#featured .circles .circle.active {
+  color: #00b4f0;
+  font-size: 60px;
+  font-weight: bold;
+  padding: 5px 0 0 0;
+}
+#featured .circles .circle.active:hover {
+  font-size: 60px;
+  font-weight: bolder;
+}
+#topGames {
+}
+
+#topGames .games {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+}
+
+#topGames .games .game {
+  background: url("https://media.playstation.com/is/image/SCEA/call-of-duty-warzone-box-art-01-ps4-10mar20-en-us?$native_nt$");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 270px;
+  border-radius: 5px;
+  position: relative;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.45);
+  cursor: pointer;
+}
+
+#topGames .games .game .info {
+  background: #253041;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  transition: all 0.4s ease-in-out;
+  color: #ffff;
+}
+
+#topGames .games .game:hover .info {
+  background: #313f51;
+}
+
+#topGames .games .game .info .title {
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 0.85rem;
+}
+#topGames .games .game .info .views {
+  font-weight: 300;
+  color: #8c919d;
 }

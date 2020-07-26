@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mixer Clone</title>
     <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <header>
@@ -16,11 +22,15 @@
           <a href=" #">Top Streams</a>
           <a href=" #">Games</a>
           <a href=" #">TEAMS</a>
-          <a href=" #">MORE</a>
+          <a href=" #"
+            >MORE<i class="fa fa-angle-down" aria-hidden="true"></i
+          ></a>
         </nav>
       </div>
       <div class="rightMenu">
-        <div class="language">Language</div>
+        <div class="language">
+          Language<i class="fa fa-angle-down" aria-hidden="true"></i>
+        </div>
         <a href="#" class="signin">Sign In</a>
       </div>
     </header>
@@ -28,18 +38,64 @@
     <!-- Featured part -->
     <section id="featured">
       <div class="container">
-        <div class="title">
+        <div class="sectionTitle">
           Featured
         </div>
         <div class="videoSection">
-          <div class="video"></div>
-          <div class="video"></div>
-          <div class="video center"></div>
-          <div class="video"></div>
-          <div class="video"></div>
-          <div class="arrows">
-            <div class="arrow">left</div>
-            <div class="arrow">right</div>
+          <div class="video">
+            <div
+              class="image"
+              style="
+                background: url('https://www.ccn.com/wp-content/uploads/2020/03/Warzone222.jpg');
+                background-position: top center;
+                background-size: cover;
+                background-repeat: no-repeat;
+              "
+            >
+              <div class="arrow">
+                <i class="fa fa-angle-left" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div
+              class="image"
+              style="
+                background: url('https://1290779820.rsc.cdn77.org/screenshots/fortnite-battle-royale-636903289973291884.jpg');
+                background-position: bottom center;
+                background-size: cover;
+                background-repeat: no-repeat;
+              "
+            ></div>
+          </div>
+          <div class="video center">
+            <div class="image"></div>
+          </div>
+          <div class="video">
+            <div
+              class="image"
+              style="
+                background: url('https://img.redbull.com/images/q_auto,f_auto/redbullcom/2019/06/04/adc2e3d9-400b-4a11-984b-058b3bc24916/neymar-fifa-19.jpg');
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+              "
+            ></div>
+          </div>
+          <div class="video">
+            <div
+              class="image"
+              style="
+                background: url('https://st1.bgr.in/wp-content/uploads/2020/05/Assassins-Creed-Valhalla-gameplay.jpg');
+                background-position: top center;
+                background-size: cover;
+                background-repeat: no-repeat;
+              "
+            >
+              <div class="arrow">
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </div>
+            </div>
           </div>
         </div>
         <div class="circles">
@@ -48,6 +104,124 @@
           <div class="circle active">.</div>
           <div class="circle">.</div>
           <div class="circle">.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="topGames">
+      <div class="container">
+        <div class="sectionTitle">
+          Top Games
+        </div>
+        <div class="games">
+          <div
+            class="game"
+            style="
+              background: url('https://media.playstation.com/is/image/SCEA/call-of-duty-warzone-box-art-01-ps4-10mar20-en-us?$native_nt$');
+              background-position: top center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          >
+            <div class="info">
+              <div class="title">
+                COD WarZone
+              </div>
+              <div iv class="views">
+                <i class="fa fa-eye" aria-hidden="true"></i> 32516
+              </div>
+            </div>
+          </div>
+          <div
+            class="game"
+            style="
+              background: url('https://i.ebayimg.com/images/g/tlcAAOSwHghcrNUk/s-l400.jpg');
+              background-position: top center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          >
+            <div class="info">
+              <div class="title">
+                Fortnite
+              </div>
+              <div iv class="views">
+                <i class="fa fa-eye" aria-hidden="true"></i> 32516
+              </div>
+            </div>
+          </div>
+          <div
+            class="game"
+            style="
+              background: url('https://1.bp.blogspot.com/_FA30KVcjKm0/TLOUfC2OklI/AAAAAAAAAAo/WOT1m0SB5jU/s1600/GarenaLeagueoflegendsposter.jpg');
+              background-position: top center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          >
+            <div class="info">
+              <div class="title">
+                Leauge of Legends
+              </div>
+              <div iv class="views">
+                <i class="fa fa-eye" aria-hidden="true"></i> 32516
+              </div>
+            </div>
+          </div>
+          <div
+            class="game"
+            style="
+              background: url('https://m.media-amazon.com/images/M/MV5BMjY4MTNlNzItNmViNC00MDBiLTgwNzQtODI5OTZlOTQwM2QzXkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_.jpg');
+              background-position: top center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          >
+            <div class="info">
+              <div class="title">
+                Assassin's Creed
+              </div>
+              <div iv class="views">
+                <i class="fa fa-eye" aria-hidden="true"></i> 32516
+              </div>
+            </div>
+          </div>
+          <div
+            class="game"
+            style="
+              background: url('https://cdn.europosters.eu/image/750/posters/gears-of-war-4-game-cover-i30650.jpg');
+              background-position: top center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          >
+            <div class="info">
+              <div class="title">
+                Gears of War 4
+              </div>
+              <div iv class="views">
+                <i class="fa fa-eye" aria-hidden="true"></i> 32516
+              </div>
+            </div>
+          </div>
+          <div
+            class="game"
+            style="
+              background: url('https://i.pinimg.com/236x/77/e6/6e/77e66e3d1014a8a7b7c7f100747fd112.jpg');
+              background-position: top center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          >
+            <div class="info">
+              <div class="title">
+                Fifa 2020
+              </div>
+              <div iv class="views">
+                <i class="fa fa-eye" aria-hidden="true"></i> 32516
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
